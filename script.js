@@ -39,3 +39,7 @@ const myCountryDescription =
 console.log(myCountryDescription);
 
 // Strings and Template Literals
+const myNewCountryDescription = `${country} is in ${myCountryContinent}, and some of its 206 million people speak ${language}`;
+console.log(myNewCountryDescription);
+
+// Taking Decisions: if / else statements
