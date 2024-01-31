@@ -43,3 +43,10 @@ const myNewCountryDescription = `${country} is in ${myCountryContinent}, and som
 console.log(myNewCountryDescription);
 
 // Taking Decisions: if / else statements
+const countryAverage = myCountryPopulation - 33000000;
+
+if (myCountryPopulation > 33000000) {
+  console.log(`${country}'s population is above average`);
+} else {
+  console.log(`${country}'s population is ${countryAverage} below average`);
+}
