@@ -1,3 +1,4 @@
+/*
 // Values and Variables
 const country = "Nigeria";
 const myCountryContinent = "Africa";
@@ -50,3 +51,15 @@ if (myCountryPopulation > 33000000) {
 } else {
   console.log(`${country}'s population is ${countryAverage} below average`);
 }
+// Type Conversion and Coercion
+const operation1 = "9" - "5";
+const operation2 = "19" - "13" + "17";
+const operation3 = "19" - "13" + 17;
+const operation4 = "123" < 57;
+const operation5 = 5 + 6 + "4" + 9 - 4 - 2;
+console.log(operation1);
+console.log(operation2);
+console.log(operation3);
+console.log(operation4);
+console.log(operation5);
+*/
