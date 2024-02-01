@@ -1,12 +1,11 @@
-/*
 // Values and Variables
 const country = "Nigeria";
-const myCountryContinent = "Africa";
-let myCountryPopulation = 206000000;
+const continent = "Africa";
+let population = 206;
 
 console.log(country);
-console.log(myCountryContinent);
-console.log(myCountryPopulation);
+console.log(continent);
+console.log(population);
 
 // Data Types
 let isIsland = true;
@@ -20,33 +19,35 @@ language = "English";
 console.log(language);
 
 // Basic Operators
-let myCountryInHalf = myCountryPopulation / 2;
-console.log(myCountryInHalf);
+let countryInHalf = population / 2;
+console.log(countryInHalf);
 
-let countryPlusOne = myCountryPopulation + 1;
-console.log(countryPlusOne);
+population++;
+console.log(population);
 
-let finlandPopulation = 6000000;
+let finlandPopulation = 60;
 
-let isMyCountryMore = myCountryPopulation > finlandPopulation;
+let isMyCountryMore = population > finlandPopulation;
 console.log(isMyCountryMore);
 
-const myCountryDescription =
+const description =
   country +
   " is in " +
-  myCountryContinent +
-  ", and some of its 206 million people speak " +
+  continent +
+  ", and some of its " +
+  population +
+  " million people speak " +
   language;
-console.log(myCountryDescription);
+console.log(description);
 
 // Strings and Template Literals
-const myNewCountryDescription = `${country} is in ${myCountryContinent}, and some of its 206 million people speak ${language}`;
-console.log(myNewCountryDescription);
+const newDescription = `${country} is in ${continent}, and some of its ${population} million people speak ${language}`;
+console.log(newDescription);
 
 // Taking Decisions: if / else statements
-const countryAverage = myCountryPopulation - 33000000;
+const countryAverage = population - 33;
 
-if (myCountryPopulation > 33000000) {
+if (population > 33) {
   console.log(`${country}'s population is above average`);
 } else {
   console.log(`${country}'s population is ${countryAverage} below average`);
@@ -69,4 +70,13 @@ const numNeighbours = Number(
 if (numNeighbours === 1) console.log("Only 1 border!");
 else if (numNeighbours > 1) console.log("More than 1 border");
 else console.log("No borders");
-*/
+
+const speakEnglish = true;
+const lessPeople = true;
+const notAnIsland = true;
+
+if (speakEnglish && lessPeople && notAnIsland) {
+  console.log("You should live in Nigeria");
+} else {
+  console.log("Nigeria doesn't meet your criteria :(");
+}
