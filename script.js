@@ -15,7 +15,7 @@ console.log(isIsland);
 console.log(language);
 
 // Let, const, Var
-language = "English";
+language = "english";
 console.log(language);
 
 // Basic Operators
@@ -64,19 +64,35 @@ console.log(operation3);
 console.log(operation4);
 console.log(operation5);
 
-const numNeighbours = Number(
-  prompt("How many neighbour countries does your countr have?")
-);
+const numNeighbours = Number();
+// prompt("How many neighbour countries does your countr have?")
 if (numNeighbours === 1) console.log("Only 1 border!");
 else if (numNeighbours > 1) console.log("More than 1 border");
 else console.log("No borders");
 
-const speakEnglish = true;
-const lessPeople = true;
-const notAnIsland = true;
-
-if (speakEnglish && lessPeople && notAnIsland) {
-  console.log("You should live in Nigeria");
+if (language === "english" && population < 50 && !isIsland) {
+  console.log(`You should live in ${country}`);
 } else {
-  console.log("Nigeria doesn't meet your criteria :(");
+  console.log(`${country} doesn't meet your criteria :(`);
+}
+
+switch (language) {
+  case "chinese":
+  case "mandarin":
+    console.log("Most number of native speakers!");
+    break;
+  case "spanish":
+    console.log("2nd place in number of native speakers");
+    break;
+  case "english":
+    console.log("3rd place");
+    break;
+  case "hindi":
+    console.log("Number 4");
+    break;
+  case "arabic":
+    console.log("5th most spoken language");
+    break;
+  default:
+    console.log("Great language too :D");
 }
